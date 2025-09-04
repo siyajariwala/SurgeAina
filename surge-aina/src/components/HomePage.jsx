@@ -15,7 +15,7 @@ export default function HomePage() {
            <h1 className="hero__title">
             <span>Welcome</span>
             <span>to</span>
-            <span className="accent">Surge Aina</span>
+            <span>Surge Aina</span>
           </h1>
 
           {/* Subtitle */}
