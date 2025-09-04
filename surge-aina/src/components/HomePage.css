@@ -2,7 +2,7 @@
   --accent: #060b17c5;
   --text: #0f172a;
   --muted: #334155;
-  --bg: #ffffff;
+  --bg: #170606;
 }
 
 * {
@@ -28,7 +28,13 @@
   align-items: center;
   gap: 40px;
 }
-
+.video-text {
+  display: block;
+  width: clamp(600px, 60vw, 1100px);
+  height: auto;            /* respects viewBox aspect ratio */
+  margin: 24px auto 0;     /* center horizontally; tweak as you like */
+  filter: contrast(1.05) saturate(1.08); /* subtle pop */
+}
 /* Video */
 .hero__media {
   width: 100%;
@@ -153,4 +159,13 @@
   .hero__cta {
     justify-content: center;
   }
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+  .headline { gap: 10px 12px; }
 }

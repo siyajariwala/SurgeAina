@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import "./HomePage.css";
 
 export default function HomePage() {
@@ -13,19 +12,20 @@ export default function HomePage() {
 
         {/* Right: Text */}
         <div className="hero__text">
-          <h1 className="hero__title">
+           <h1 className="hero__title">
             <span>Welcome</span>
             <span>to</span>
             <span className="accent">Surge Aina</span>
           </h1>
 
-          <p className="hero__subtitle">
-           Lorem ipsum dolor sit amet.
-          </p>
+          {/* Subtitle */}
+          <p className="hero__subtitle">Lorem ipsum dolor sit amet.</p>
 
+          {/* CTA */}
           <div className="hero__cta">
-            <Link to="/about" className="btn btn--primary">Get Started</Link>
-           
+            <Link to="/about" className="btn btn--primary">
+              Get Started
+            </Link>
           </div>
         </div>
       </div>
