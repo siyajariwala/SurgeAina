@@ -20,7 +20,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
- background: #d0c8a2;
+ background: #e9e2bf;
 }
 
 .hero__content {
@@ -83,7 +83,7 @@ body {
 /* Animated gradient on each word */
 .hero__title span {
   display: inline-block;
-  background: linear-gradient(90deg, #4b3204, #5d3305, #1f1e02);
+  background: linear-gradient(90deg, #422c05, #d2a622, #372504);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
