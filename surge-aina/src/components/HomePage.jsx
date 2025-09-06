@@ -9,7 +9,7 @@ export default function Home() {
         <div className="bg-gradient-to-r  from-stone-950 to-amber-950 text-white flex items-center
                         lg:order-2 lg:col-start-2 lg:row-start-1">
           <div className="w-full max-w-none px-6 lg:px-16 py-16">
-            <h1 className="text-6xl font-bold leading-tight mb-2 border-t-4 border-b-4 border-yellow-100 py-4">
+            <h1 className="text-5xl font-bold leading-tight mb-2 border-t-4 border-b-4 border-yellow-100 py-4">
               <span className="text-yellow-100">Welcome to </span><br />
               <span className="bg-clip-text text-9xl text-transparent bg-gradient-to-r from-orange-100 to-orange-200">
                 Surge
