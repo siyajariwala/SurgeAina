@@ -17,7 +17,7 @@ export default function Home() {
               <span className="text-yellow-100 text-9xl">Aina</span>
             </h1>
             <p className="mt-4 text-sm/6 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Experience the future with us.
+               Because tech should understand you
             </p>
             <Link
               to="/about"
