@@ -46,7 +46,7 @@ export default function ContactPage() {
   };
 
   try {
-    // EMAIL 1: To your company (notification that someone contacted)
+    // EMAIL 1: To the company 
     const companyParams = {
       ...commonData,
       to_email: "your-company@example.com",  // Your company email
@@ -55,12 +55,12 @@ export default function ContactPage() {
     
     await emailjs.send(
       SERVICE_ID, 
-      TEMPLATE_ID,           // Company template: "New inquiry received"
+      TEMPLATE_ID,           
       companyParams, 
       { publicKey: PUBLIC_KEY }
     );
     
-    // EMAIL 2: To user (confirmation of what they sent)
+    // EMAIL 2: To user (confirmation )
     const userParams = {
       ...commonData,
       to_email: fd.get("email"),     // User's email
@@ -94,14 +94,14 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-amber-50">
-        <section className="relative max-w-7xl mx-auto px-4 py-16 bg-amber-50 rounded-xl shadow-sm">
+      <main className="min-h-screen bg-gray-50">
+        <section className="relative max-w-7xl mx-auto px-4 py-16 bg-gray-100 rounded-xl shadow-sm">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-amber-950 mb-4">
-              Enquire About Our <span className="text-amber-950">Services</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 text-center font-inter">
+              Enquire About Our Services
             </h1>
-            <div className="w-20 h-1 bg-red-600 mx-auto mb-6" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <div className="w-20 h-1 bg-slate-900 mx-auto mb-6" />
+            <p className="text-lg text-slate-600 text-center mb-12 font-inter">
               We're here to help you begin your journey. Fill out the form below and our team will get back to you shortly.
             </p>
           </div>
@@ -109,10 +109,10 @@ export default function ContactPage() {
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <div className="md:flex">
               {/* left column (unchanged) */}
-              <div className="md:w-1/3 bg-gradient-to-br from-amber-950 to-amber-800 p-10 text-white flex flex-col justify-between">
+              <div className="bg-slate-700 text-white rounded-lg p-8 shadow-lg">
                 <div>
-                  <h2 className="text-2xl font-bold mb-4">Why Enquire With Us?</h2>
-                  <ul className="space-y-4">
+                  <h2 className="text-2xl font-bold mb-6 font-inter">Why Enquire With Us?</h2>
+                  <ul className="space-y-4 text-lg ">
                     {[
                       "Expert guidance from industry professionals",
                       "Lorem ipsum dolor sit amet",
@@ -130,8 +130,8 @@ export default function ContactPage() {
                 </div>
                 <div className="mt-8">
                   <h3 className="text-lg font-semibold mb-2">Need assistance?</h3>
-                  <p className="text-red-100 mb-2">Call us at +1 xxx xxxxxxx</p>
-                  <p className="text-sm text-red-200">Our team is available 10AM - 6PM, Monday to Saturday</p>
+                  <p className="text-red-50 mb-2">Call us at +1 xxx xxxxxxx</p>
+                  <p className="text-sm text-red-50">Our team is available 10AM - 6PM, Monday to Saturday</p>
                 </div>
               </div>
 
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={sending}
-                    className="w-full py-3 px-6 bg-amber-950 text-white font-medium rounded-lg shadow-sm hover:bg-amber-900 transition disabled:opacity-60"
+                    className="bg-slate-900 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold font-inter transition-colors shadow-lg"
                   >
                     {sending ? "Sending..." : "Submit Enquiry"}
                   </button>

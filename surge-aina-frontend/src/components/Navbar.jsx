@@ -12,8 +12,7 @@ export default function Navbar() {
       : "text-white hover:text-amber-300") + " transition";
 
   return (
-    <nav className="s text-amber-50 bg-gradient-to-br from-amber-950 to-black
-                ">
+    <nav className="bg-slate-900 text-white shadow-lg">
       <div className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
           {/* Brand */}

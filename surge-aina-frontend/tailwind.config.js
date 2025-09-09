@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
    extend: {
+    fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
+      },
   animation: {
     typewriter: 'typewriter 2s steps(11) forwards',
     caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
